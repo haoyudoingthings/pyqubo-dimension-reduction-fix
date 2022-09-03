@@ -1,13 +1,16 @@
 # pyqubo-dimension-reduction-fix
+
 Fix the dimension reduction process so that the penalty strength is automatically chosen to be the smallest appropriate value.
 
 ## Usage
+
 Don't specify any value for the `strength` argument (default to `None`) when calling `H.compile()`. The function will handle the choice of penalty strength automatically.
 
 If a value for `strength` is specified, the function will revert to its original behavior.
 
 ## Example Code
-```
+
+```bash
 >>> import pyqubo as pq
 >>> a, b, c, d = pq.Binary('a'), pq.Binary('b'), pq.Binary('c'), pq.Binary('d')
 >>> (2*a*b*c-a*b*d).compile()
@@ -46,7 +49,9 @@ Model(CompiledQubo({('a', 'a'): 0.0,
 ```
 
 ## Installation
+
 Copy the files in `anaconda3` folder and overwrite the correpsonding files in your directory.
 
 ## Dependency
+
 The fix is based on `pyqubo 0.4.0` and `dimod 0.11.5`. This fix will not work for `pyqubo >= 1.0.0` since the core code transitioned to c++. Not sure about the dependency on `dimod` version.
