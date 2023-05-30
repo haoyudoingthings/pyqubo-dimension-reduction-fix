@@ -1,3 +1,4 @@
+# Important: The code doesn't seem to be working as intended. Use at your own discretion.
 # pyqubo-dimension-reduction-fix
 
 Fix the dimension reduction process so that the penalty strength is automatically chosen to be the smallest appropriate value.
