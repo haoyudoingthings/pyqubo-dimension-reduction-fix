@@ -1,4 +1,3 @@
-# Important: The code doesn't seem to be working as intended. Use at your own discretion.
 # pyqubo-dimension-reduction-fix
 
 Fix the dimension reduction process so that the penalty strength is automatically chosen to be the smallest appropriate value.
@@ -8,6 +7,8 @@ Fix the dimension reduction process so that the penalty strength is automaticall
 Don't specify any value for the `strength` argument (default to `None`) when calling `H.compile()`. The function will handle the choice of penalty strength automatically.
 
 If a value for `strength` is specified, the function will revert to its original behavior.
+
+Check the version of dimod with `dimod.__version__`. Its value should be `"0.11.5 modded"`.
 
 ## Example Code
 
